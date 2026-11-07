@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>SECOND CHANCE TYCOON</title>
+</head>
+<body style="margin:0;background:#1d2b3a;color:#fff;font-family:Arial,sans-serif">
+<p style="padding:1em">SECOND CHANCE TYCOON wird geladen …</p>
+<script>
+(async()=>{
+try{
+const r=await fetch('https://raw.githubusercontent.com/cnstii/neu4/83bb4ee6d064cf2c7c05449352b20531c67a450e/second-chance-tycoon%204.html');
+if(!r.ok)throw Error('HTTP '+r.status);
+const h=await r.text();
+document.open();document.write(h);document.close();
+}catch(e){
+document.body.innerHTML='<p style="padding:1em">Laden fehlgeschlagen. Bitte erneut versuchen. ('+e.message+')</p>';
+}
+})();
+</script>
+</body>
+</html>
